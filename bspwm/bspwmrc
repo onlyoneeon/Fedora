@@ -1,0 +1,35 @@
+#!/usr/bin/sh
+
+sxhkd &
+$HOME/.config/bspwm/autostart.sh
+
+bspc monitor DP-3 -d 1 2 3 4 5 7 
+bspc monitor HDMI-1 -d 8 9 10
+
+bspc config border_width         3
+bspc config window_gap          8
+
+bspc config split_ratio          0.51
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config pointer_modifier mod1
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+
+#BSPWM coloring
+bspc config normal_border_color		"#0B57A4"
+bspc config active_border_color		"#E51A1A"
+bspc config focused_border_color	"#72B7E3"
+#bspc config presel_feedback_color	"#5e81ac"
+#bspc config urgent_border_color 	"#dd2727"
+
+#Polybar
+polybar mainbar-bspwm &
