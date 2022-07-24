@@ -54,7 +54,7 @@ precipitation = 'Millimeter'
 # default: OpenWeatherMap
 provider = 'OpenWeatherMap'
 # enter your API key here
-api_key = '4b10a11e4b8d1099e2655b056dae99b5'
+api_key = '756edce7e9d4c385ef9499a53492678c'
 
 [location]
 # available providers:
@@ -70,12 +70,12 @@ provider = 'IpApi'
 # https://github.com/ryanoasis/nerd-fonts#patched-fonts
 [icons]
 # the icons displayed here are also the defaults
-clear_sky = '  '
-few_clouds = '  '
-clouds = '  '
-many_clouds = '  '
-rain = ' '
-heavy_rain = '  '
-thunderstorm = '  '
-snow = '  '
-mist = '  '
+clear_sky = ''
+few_clouds = ''
+clouds = ''
+many_clouds = ''
+rain = ''
+heavy_rain = ''
+thunderstorm = ''
+snow = ''
+mist = ''
